@@ -1,8 +1,8 @@
 {
-  "name": "redux_test",
+  "name": "redux_taskslist",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fedorzvyk.github.io/redux_test/",
+  "homepage": "https://fedorzvyk.github.io/redux_taskslist/",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@testing-library/jest-dom": "^5.16.3",
