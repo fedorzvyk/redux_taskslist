@@ -1,22 +1,12 @@
-import css from "./TaskCounter.module.css";
-import { useSelector } from "react-redux";
-import { getTasks } from "../../redux/selectors";
+import css from './TaskCounter.module.css';
+import { useSelector } from 'react-redux';
+import { selectTaskCount } from 'redux/selectors';
 
 export const TaskCounter = () => {
-    const tasks = useSelector(getTasks);
+  // const tasks = useSelector(selectTasks);
 
-     // На базі стану Redux отримуємо похідні дані
-  const count = tasks.reduce(
-    (acc, task) => {
-      if (task.completed) {
-        acc.completed += 1;
-      } else {
-        acc.active += 1;
-      }
-      return acc;
-    },
-    { active: 0, completed: 0 }
-  );
+  // На базі стану Redux отримуємо похідні дані
+  const count = useSelector(selectTaskCount);
 
   return (
     <div>
